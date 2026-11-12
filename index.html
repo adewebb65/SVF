@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://adewebb65.github.io/SVF/">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,7 +28,14 @@
     <a href="#books">Books</a>
     <a href="#work">Work with us</a>
     <a href="#foundation">Foundation</a>
+    <a href="blog.html">Blog</a>
   </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><span></span><span></span><span></span></summary>
+    <nav aria-label="Sections (mobile)">
+      <a href="#problem">Problem</a><a href="#space">Space</a><a href="#principle">Principle</a><a href="#books">Books</a><a href="#work">Work with us</a><a href="#foundation">Foundation</a><a href="blog.html">Blog</a><a href="policies.html">Policies</a><a href="support.html">Support</a>
+    </nav>
+  </details>
   <a href="#contact" class="btn btn-small">Get in touch</a>
 </header>
 
@@ -343,11 +351,17 @@
     </div>
 
     <div class="gallery">
-      <figure class="g1"><img src="img/launch-1.webp" alt="Dr Armen Papazian presenting his book at the London launch" width="1024" height="683" loading="lazy"></figure>
-      <figure class="g2"><img src="img/launch-2.webp" alt="Dr Papazian speaking at a lectern" width="1024" height="683" loading="lazy"></figure>
-      <figure class="g3"><img src="img/launch-4.webp" alt="Guests in conversation at the book launch" width="1024" height="683" loading="lazy"></figure>
-      <figure class="g4"><img src="img/launch-5.webp" alt="Speakers line up at the Chartered Accountants' Hall launch" width="1024" height="450" loading="lazy"></figure>
-      <figure class="g5"><img src="img/tett.webp" alt="Dr Gillian Tett and Dr Armen Papazian, King's College Cambridge" width="1000" height="563" loading="lazy"></figure>
+      <div class="g-row">
+        <figure class="reveal-g" style="--ar:1.499"><img src="img/launch-1.webp" alt="Dr Armen Papazian presenting his book at the London launch" width="1024" height="683" loading="lazy"></figure>
+        <figure class="reveal-g" style="--ar:1.779"><img src="img/tett.webp" alt="Dr Gillian Tett and Dr Armen Papazian, King's College Cambridge" width="1000" height="562" loading="lazy"></figure>
+      </div>
+      <div class="g-row">
+        <figure class="reveal-g" style="--ar:1.499"><img src="img/launch-2.webp" alt="Dr Papazian speaking at a lectern" width="1024" height="683" loading="lazy"></figure>
+        <figure class="reveal-g" style="--ar:1.499"><img src="img/launch-4.webp" alt="Guests in conversation at the book launch" width="1024" height="683" loading="lazy"></figure>
+      </div>
+      <div class="g-row solo">
+        <figure class="reveal-g" style="--ar:2.276"><img src="img/launch-5.webp" alt="Speakers line up at the Chartered Accountants' Hall launch" width="1024" height="450" loading="lazy"></figure>
+      </div>
     </div>
 
     <ol class="timeline">
@@ -382,15 +396,15 @@
 
     <div class="people">
       <article class="person reveal">
-        <img src="img/armen.webp" alt="Dr Armen V. Papazian" width="600" height="883" loading="lazy">
+        <div class="portrait"><img src="img/armen.webp" alt="Dr Armen V. Papazian" width="600" height="883" loading="lazy"></div>
         <div><h3>Dr Armen V. Papazian</h3><p class="role">Founder &amp; Director</p><p>Financial economist, author of the trilogy and originator of the Space Value of Money.</p><a href="https://www.linkedin.com/in/armenpapazi/">LinkedIn</a></div>
       </article>
       <article class="person reveal">
-        <img src="img/adrian.webp" alt="Adrian Webb" width="277" height="300" loading="lazy">
+        <div class="portrait"><img src="img/adrian.webp" alt="Adrian Webb" width="277" height="300" loading="lazy"></div>
         <div><h3>Adrian Webb</h3><p class="role">Founder &amp; Director</p><p>Former FTSE board director, chairman of Outcome Path, investor in environmental and health technology.</p><a href="https://www.linkedin.com/in/webbadrian/">LinkedIn</a></div>
       </article>
       <article class="person reveal">
-        <img src="img/louise.webp" alt="Louise Wiggins" width="299" height="366" loading="lazy">
+        <div class="portrait"><img src="img/louise.webp" alt="Louise Wiggins" width="299" height="366" loading="lazy"></div>
         <div><h3>Louise Wiggins</h3><p class="role">Executive Assistant</p><p>Keeps the Foundation’s programmes, events and partners running smoothly.</p><a href="mailto:louise@spacevaluefoundation.com">Email</a></div>
       </article>
     </div>
@@ -406,7 +420,7 @@
     <p class="big">Partner, affiliate, member or client — we welcome individuals and organisations, public and private, who want finance that accounts for space.</p>
     <div class="cta center">
       <a href="mailto:info@spacevaluefoundation.com" class="btn">info@spacevaluefoundation.com</a>
-      <a href="https://spacevaluefoundation.com/support/" class="btn btn-ghost">Become a supporter</a>
+      <a href="support.html" class="btn btn-ghost">Become a supporter</a>
     </div>
   </div>
 </section>
@@ -421,11 +435,12 @@
     </div>
     <nav aria-label="Policies and resources" class="foot-links">
       <a href="https://www.linkedin.com/company/space-value-foundation/">LinkedIn</a>
-      <a href="https://spacevaluefoundation.com/blog-x/">Blog</a>
-      <a href="https://spacevaluefoundation.com/privacy-policy/">Privacy</a>
-      <a href="https://spacevaluefoundation.com/safeguarding-policy/">Safeguarding</a>
-      <a href="https://spacevaluefoundation.com/complaints-policy/">Complaints</a>
-      <a href="https://spacevaluefoundation.com/equal-opportuntiy-policy/">Equal opportunity</a>
+      <a href="blog.html">Blog</a>
+      <a href="policies.html">All policies</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="safeguarding-policy.html">Safeguarding</a>
+      <a href="complaints-policy.html">Complaints</a>
+      <a href="equal-opportunity-policy.html">Equal opportunity</a>
     </nav>
   </div>
   <p class="wrap credit">© 2026 Space Value Foundation · Earth and Moon imagery: NASA</p>

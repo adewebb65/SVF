@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adewebb65.github.io/SVF/sitemap.xml
